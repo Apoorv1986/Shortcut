@@ -17,18 +17,25 @@
 
 ```
 
+## How to run
+
 Start a Virtulabox in headless fashion:
 
+```
 VBoxManage startvm p4-learning --type headless
-
+```
 
 ssh to Virtualbox :
 
+```
 ssh -p 22 p4@127.0.0.1 (see the port number as per your VBox settings
+```
 
 For switch tables:
 
+```
 cmd: simple_switch_CLI --thrift-port 9091
+```
 
 output:
 
@@ -62,24 +69,24 @@ So just run with this in controller and you are good instead of manually failing
 
 For Shortcut, there is no delay and the traffic rightaway takes the S1-S3 path instead of S1-S2-S1-S3 with loops (for existing FRRs)
 
-## How to run
+## Other imp steps
 
 Run the topology in mininet:
 
-```
+
 sudo p4run
-```
+
 
 Runs controller and populates 2000 entries:
-```
+
 sudo python controller populate 2000
-```
+
 
 Note: once topology is set try to ping from one host to another:
 
-```
+
 mininet> h1 ping h2
-```
+
 
 data values:
 
