@@ -88,7 +88,7 @@ Note: once topology is set try to ping from one host to another:
 mininet> h1 ping h2
 
 
-data values:
+## Dataset for experiments (represents values received from mininet):
 
 Median throughput for us: 52.4, 51.4, 43, 40.9, 33.05, 0, 15.7, 13.6, 52.4, 48.2, 66.1, 47.2, 64, 46.1, 47.2, 64, 46.1, 55
 
